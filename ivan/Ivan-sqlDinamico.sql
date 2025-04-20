@@ -18,8 +18,8 @@ begin
     execute immediate 'insert into '||v_nombreTabla||' (id,nombre) values (1,''pepe'')';
     --(3)
     execute immediate 'select nombre from '||v_nombreTabla||' where id = 1' into v_nombre;
-    --(1)
     dbms_output.put_line(v_nombre);
+    --(1)
     execute immediate 'drop table '||v_nombreTabla;
     --(4)
     execute immediate 'grant select on empleado to tema4';
