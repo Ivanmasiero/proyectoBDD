@@ -2,9 +2,9 @@ SET SERVEROUTPUT ON
 --Solo podemos utilizar DML (insert, update, delete, drop y select) 
 --y TCL (Commit, Rollback y savepoints)
 --Utiliza acoplamiento temprano (tarda mas en compilar pero menos en ejecutar)
---NO PODEMOS HACER
 
---**********DML***************
+--***********DDL****************
+--NO PODEMOS HACER:
 /*
 BEGIN
      CREATE TABLE PEPE(
@@ -17,6 +17,8 @@ create table alumno (
     id number,
     nombre varchar2(30));
 
+
+--**********DML***************
 
 --INSERT*********
 begin
@@ -54,8 +56,3 @@ begin
     where id = 3;
     dbms_output.put_line(v_alumno);
 end;
-
-
-
-
-
