@@ -3,7 +3,7 @@ SET SERVEROUTPUT ON
 --y TCL (Commit, Rollback y savepoints)
 --Utiliza acoplamiento temprano (tarda mas en compilar pero menos en ejecutar)
 
---***********DLL****************
+--***********DDL****************
 --NO PODEMOS HACER:
 /*
 BEGIN
