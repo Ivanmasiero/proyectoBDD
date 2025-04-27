@@ -24,3 +24,5 @@ BEGIN
    END IF;
 END;
 /
+commit;
+/

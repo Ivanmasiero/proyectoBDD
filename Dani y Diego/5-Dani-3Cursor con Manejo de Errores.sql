@@ -79,3 +79,4 @@ EXCEPTION  -- Manejo de errores generales
       END IF;
 END;
 /
+commit;

@@ -49,3 +49,5 @@ BEGIN
    CLOSE lista_empleados;
 END;
 /
+commit;
+/

@@ -31,3 +31,5 @@ BEGIN
    DBMS_OUTPUT.PUT_LINE('Total lugares remotos: ' || SQL%ROWCOUNT);
 END;
 /
+commit;
+/

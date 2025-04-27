@@ -48,4 +48,5 @@ begin
 end;
 /
 select * from alumno;
+drop table alumno
 --*/

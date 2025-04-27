@@ -34,3 +34,5 @@ BEGIN
    -- Sin necesidad de limpiar El FOR cierra todo automático
 END;
 /
+commit;
+/
