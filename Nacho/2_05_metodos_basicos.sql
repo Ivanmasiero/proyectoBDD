@@ -1,0 +1,13 @@
+
+DECLARE
+  TYPE NumTab IS TABLE OF NUMBER;
+  v_Tab NumTab := NumTab(1, 2, 3);
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('COUNT: ' || v_Tab.COUNT);
+  DBMS_OUTPUT.PUT_LINE('FIRST: ' || v_Tab.FIRST);
+  DBMS_OUTPUT.PUT_LINE('LAST: ' || v_Tab.LAST);
+  IF v_Tab.EXISTS(2) THEN
+    DBMS_OUTPUT.PUT_LINE('Existe el índice 2');
+  END IF;
+END;
+/
