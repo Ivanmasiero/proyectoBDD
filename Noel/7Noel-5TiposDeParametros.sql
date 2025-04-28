@@ -1,4 +1,9 @@
---El valor real se pasa al procedimiento, se comporta como constante y no se modifica
+/*
+Aquí vemos tipos de parámetros; In, Out e In Out. 
+Para entender estos tipos de parametros, necesitaremos entender primero los roles de Parametro Real y Parametro Formal.
+*/
+
+--El parámetro real se pasa al procedimiento, se comporta como constante y no se modifica
 create or replace procedure sumaIn (
     p_op1 in number,
     p_op2 in number,
@@ -10,6 +15,8 @@ create or replace procedure sumaIn (
         dbms_output.put_line('Resultado dentro del procedimiento es: ' || (p_op1+p_op2));
     END sumaIn;
     /
+
+--El parametro real se pasa al procedimiento, se inicializa a null en el parametro formal y devuelve el valor procesado
 create or replace procedure sumaOut (
     p_op1 out number,
     p_op2 out number,
@@ -21,6 +28,7 @@ create or replace procedure sumaOut (
 
     END sumaOut;
     /
+--el parametro real se pasa al procedimiento, se procesa en el procedimiento y se devuelve el valor procesado
 create or replace procedure sumaInOut (
     p_op1 in out number,
     p_op2 in out number,
@@ -32,7 +40,7 @@ create or replace procedure sumaInOut (
 
     END sumaInOut;
     /
-
+--Un bloque PL/SQL para probar el funcionamiento
     DECLARE
     v_op1 number:= 1;
     v_op2 number:= 2;
