@@ -1,3 +1,9 @@
+/*
+Aquí queremos sacar cuanta gente tiene casa.
+
+Esto lo estableceremos como un procedimiento, con una función dentro de un IF (para demostrar que forma parte de una funcion PL/SQL
+*/
+
 --Al compilarse en la base de datos, se puede acceder desde cualquier bloque (a no ser de que se borre el procedimiento/funcion, claro)
 create or replace function tieneCasa(
     p_emp in number) RETURN BOOLEAN AS
