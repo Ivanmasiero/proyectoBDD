@@ -1,3 +1,8 @@
+/*
+Aquí veremos un ejemplo con todos los tipos de parámetros juntos, para trabajar más sus diferencias.
+También veremos el NOCOPY, default, y nominaciones.
+*/
+
 create or replace procedure sumaX (
     p_op in number default 0,     --Cuanto queremos sumar
     p_res in out NOCOPY number , --Numero al que queremos sumar
@@ -12,6 +17,8 @@ create or replace procedure sumaX (
         p_historial:= p_op;
     END sumaX;
 /
+
+--Un bloque para probar su funcionamiento
 DECLARE
     v_op number:=2;
     v_res number:=3;
